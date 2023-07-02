@@ -1,14 +1,13 @@
 import React from "react";
 import { useRouter } from "next/router";
-function Slug() {
+const Slug = () => {
   const router = useRouter();
   const pageNumber = router.query.slug;
   console.log("gg", pageNumber);
   return (
     <>
-      <div>fghbns{pageNumber}</div>
+      <h1>fghbns{pageNumber}</h1>
     </>
   );
-}
-
+};
 export default Slug;
